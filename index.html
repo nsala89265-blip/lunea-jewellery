@@ -1,0 +1,2279 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="LUNEA — luksusowa biżuteria stworzona z myślą o wyjątkowych chwilach."
+    >
+
+    <title>LUNEA — Fine Jewellery</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body id="top">
+
+
+<!-- =====================================================
+     TOP BAR
+===================================================== -->
+
+<div class="top-bar">
+    <p>DARMOWA DOSTAWA
+ OD 300 ZŁ</p>
+</div>
+
+
+<!-- =========================================================
+     HEADER — LUNEA
+========================================================= -->
+
+<header class="header" id="top">
+
+    <!-- MOBILE MENU -->
+    <button class="mobile-menu-button" id="mobileMenuButton" aria-label="Menu">
+        <span></span>
+        <span></span>
+    </button>
+
+
+    <!-- DESKTOP NAVIGATION -->
+    <nav class="desktop-navigation">
+
+        <a href="#new" class="navigation-link">
+            NOWOŚCI
+        </a>
+
+        <div class="nav-dropdown">
+
+            <button class="nav-dropdown-button navigation-link">
+                BIŻUTERIA
+                <span>↓</span>
+            </button>
+
+            <div class="nav-dropdown-menu">
+
+                <div class="dropdown-label">
+                    BIŻUTERIA
+                </div>
+
+                <a href="#products">NASZYJNIKI</a>
+                <a href="#products">PIERŚCIONKI</a>
+                <a href="#products">BRANSOLETKI</a>
+                <a href="#products">KOLCZYKI</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="nav-dropdown">
+
+            <button class="nav-dropdown-button navigation-link">
+                KOLEKCJE
+                <span>↓</span>
+            </button>
+
+            <div class="nav-dropdown-menu">
+
+                <div class="dropdown-label">
+                    KOLEKCJE
+                </div>
+
+                <a href="#collections">ESSENTIAL</a>
+                <a href="#collections">SIGNATURE</a>
+                <a href="#collections">TIMELESS</a>
+
+            </div>
+
+        </div>
+
+
+        <a href="#gifts" class="navigation-link">
+            PREZENTY
+        </a>
+
+        <a href="#about" class="navigation-link">
+            O NAS
+        </a>
+
+    </nav>
+
+
+
+   
+
+
+    <!-- =====================================================
+         ACTIONS — ONLY ICONS
+    ====================================================== -->
+
+    <div class="desktop-actions">
+
+        <!-- ACCOUNT -->
+        <button
+            class="header-action"
+            id="accountButton"
+            aria-label="Zaloguj się"
+        >
+
+            <svg
+                class="action-icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+                <circle cx="12" cy="8" r="3.5"></circle>
+                <path d="M5 21c.7-4 3.1-6 7-6s6.3 2 7 6"></path>
+            </svg>
+
+        </button>
+
+
+        <!-- SEARCH -->
+        <button
+            class="header-action"
+            id="searchButton"
+            aria-label="Szukaj"
+        >
+
+            <svg
+                class="action-icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+                <circle cx="10.8" cy="10.8" r="6.5"></circle>
+                <path d="m16 16 5 5"></path>
+            </svg>
+
+        </button>
+
+
+        <!-- WISHLIST -->
+        <button
+            class="header-action"
+            id="wishlistButton"
+            aria-label="Ulubione"
+        >
+
+            <svg
+                class="action-icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+                <path d="M20.8 8.8c0 5.5-8.8 10.2-8.8 10.2S3.2 14.3 3.2 8.8C3.2 6 5.1 4 7.7 4c1.7 0 3.3.9 4.3 2.2C13 4.9 14.6 4 16.3 4c2.6 0 4.5 2 4.5 4.8Z"></path>
+            </svg>
+
+        </button>
+
+
+        <!-- CART -->
+        <button
+            class="header-action cart-action"
+            id="cartButton"
+            aria-label="Koszyk"
+        >
+
+            <svg
+                class="action-icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+                <path d="M5 8h14l-1 12H6L5 8Z"></path>
+                <path d="M9 8a3 3 0 0 1 6 0"></path>
+            </svg>
+
+            <span class="cart-count">0</span>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     MOBILE MENU
+===================================================== -->
+
+<div
+    class="menu-overlay"
+    id="menuOverlay"
+></div>
+
+
+<aside
+    class="mobile-menu"
+    id="mobileMenu"
+>
+
+    <div class="mobile-menu-header">
+
+        <span class="mobile-menu-title">
+            LUNEA
+        </span>
+
+        <button
+            class="close-menu"
+            id="closeMenu"
+            type="button"
+            aria-label="Zamknij menu"
+        >
+            ×
+        </button>
+
+    </div>
+
+
+    <nav class="mobile-navigation">
+
+        <a href="#new">
+            NOWOŚCI
+        </a>
+
+
+        <button
+            class="mobile-navigation-button"
+            type="button"
+            data-submenu="jewelleryMenu"
+        >
+            BIŻUTERIA
+            <span>+</span>
+        </button>
+
+
+        <div
+            class="mobile-submenu"
+            id="jewelleryMenu"
+        >
+
+            <a
+                href="#products"
+                data-category-link="ring"
+            >
+                Pierścionki
+            </a>
+
+            <a
+                href="#products"
+                data-category-link="necklace"
+            >
+                Naszyjniki
+            </a>
+
+            <a
+                href="#products"
+                data-category-link="earrings"
+            >
+                Kolczyki
+            </a>
+
+            <a
+                href="#products"
+                data-category-link="bracelet"
+            >
+                Bransoletki
+            </a>
+
+        </div>
+
+
+        <button
+            class="mobile-navigation-button"
+            type="button"
+            data-submenu="collectionsMenu"
+        >
+            KOLEKCJE
+            <span>+</span>
+        </button>
+
+
+        <div
+            class="mobile-submenu"
+            id="collectionsMenu"
+        >
+
+            <a href="#collections">
+                LUMIÈRE
+            </a>
+
+            <a href="#collections">
+                ESSENTIALS
+            </a>
+
+            <a href="#collections">
+                SIGNATURE
+            </a>
+
+        </div>
+
+
+        <a href="#gifts">
+            PREZENTY
+        </a>
+
+        <a href="#about">
+            O NAS
+        </a>
+
+    </nav>
+
+
+    <div class="mobile-menu-bottom">
+
+        <button id="mobileSearchButton" type="button">
+            SZUKAJ
+        </button>
+
+        <button
+            id="mobileWishlistMenuButton"
+            type="button"
+        >
+            ULUBIONE
+        </button>
+
+        <button
+            id="mobileBagMenuButton"
+            type="button"
+        >
+            MOJA TORBA
+        </button>
+
+    </div>
+
+</aside>
+
+
+<!-- =====================================================
+     SEARCH
+===================================================== -->
+
+<div
+    class="search-panel"
+    id="searchPanel"
+>
+
+    <div class="search-inner">
+
+        <div class="search-top">
+
+            <span>
+                SZUKAJ W LUNEA
+            </span>
+
+            <button
+                id="closeSearch"
+                type="button"
+                aria-label="Zamknij wyszukiwanie"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Czego szukasz?"
+            autocomplete="off"
+        >
+
+
+        <div
+            class="search-results"
+            id="searchResults"
+        ></div>
+
+    </div>
+
+</div>
+
+
+<main>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero" id="home">
+
+    <!-- DUŻY NAPIS -->
+    <h1 class="hero-title">
+        LUNEA
+    </h1>
+
+
+    <!-- TEKST + PRZYCISKI -->
+    <div class="hero-copy">
+
+        <div class="small-copy">
+
+            <span class="hero-main-text">
+                We do fine jewelry
+            </span>
+
+            <span class="hero-sub-text">
+                differently
+            </span>
+
+        </div>
+
+
+        <div class="hero-buttons">
+
+            <a href="#collections" class="shop-button">
+                SHOP NOW
+            </a>
+
+            <a href="#collections" class="arrow-button">
+                →
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- MODELKA -->
+    <div class="model-wrapper">
+
+        <div class="model-frame">
+
+            <img
+                src="modelka.jpg"
+                alt="LUNEA Fine Jewellery"
+                class="model-image"
+            >
+
+        </div>
+
+    </div>
+
+
+    <!-- SLIDER -->
+    <div class="slider-controls">
+
+        <button
+            class="slider-arrow prev"
+            type="button"
+            aria-label="Previous"
+        >
+            ←
+        </button>
+
+
+        <div class="slider-dots">
+
+            <button
+                class="dot active"
+                type="button"
+                aria-label="Slide 1"
+            ></button>
+
+            <button
+                class="dot"
+                type="button"
+                aria-label="Slide 2"
+            ></button>
+
+            <button
+                class="dot"
+                type="button"
+                aria-label="Slide 3"
+            ></button>
+
+            <button
+                class="dot"
+                type="button"
+                aria-label="Slide 4"
+            ></button>
+
+        </div>
+
+
+        <button
+            class="slider-arrow next"
+            type="button"
+            aria-label="Next"
+        >
+            →
+        </button>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     LUNEA — PREMIUM INFO BAR
+========================================================= -->
+
+<section class="luxury-bar">
+
+    <div class="luxury-item">
+        <span>DARMOWA DOSTAWA</span>
+        <small>PRZY ZAMÓWIENIACH OD 300 ZŁ</small>
+    </div>
+
+    <div class="luxury-line"></div>
+
+    <div class="luxury-item">
+        <span>RĘCZNE WYKONANIE</span>
+        <small>TWORZONE Z DbaŁOŚCIĄ</small>
+    </div>
+
+    <div class="luxury-line"></div>
+
+    <div class="luxury-item">
+        <span>ŁATWE ZWROTY</span>
+        <small>30 DNI NA ZWROT</small>
+    </div>
+
+    <div class="luxury-line"></div>
+
+    <div class="luxury-item">
+        <span>BEZPIECZNE PŁATNOŚCI</span>
+        <small>PROSTO I BEZPIECZNIE</small>
+    </div>
+
+</section>
+
+<!-- =====================================================
+     INTRO
+===================================================== -->
+
+<section class="intro">
+
+    <div class="section-number">
+        01 / LUNEA
+    </div>
+
+
+    <div class="intro-content">
+
+        <span class="eyebrow">
+            FINE JEWELLERY
+        </span>
+
+        <h2>
+            Piękno tkwi<br>
+            w szczegółach.
+        </h2>
+
+        <p>
+            LUNEA to biżuteria inspirowana światłem,
+            kobiecością i prostotą. Tworzymy kolekcje,
+            które nie potrzebują nadmiaru, aby przyciągać uwagę.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     NOWOŚCI
+===================================================== -->
+
+<section
+    class="new-section"
+    id="new"
+>
+
+    <div class="new-heading">
+
+        <div>
+
+            <span class="eyebrow">
+                02 / NOWOŚCI
+            </span>
+
+            <h2>
+                Najnowsze LUNEA
+            </h2>
+
+        </div>
+
+
+        <a
+            href="#products"
+            class="text-link"
+        >
+            ZOBACZ WSZYSTKIE
+            <span>↗</span>
+        </a>
+
+    </div>
+
+
+    <div class="new-grid">
+
+
+        <article class="new-card">
+
+            <div class="new-image">
+
+                <img
+                    src="pierscionki9.jpg"
+                    alt="Lumière Ring"
+                >
+
+                <span class="new-label">
+                    NOWOŚĆ
+                </span>
+
+                <button
+                    class="product-wishlist"
+                    type="button"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+
+            <div class="new-info">
+
+                <span class="product-category">
+                    PIERŚCIONEK
+                </span>
+
+                <h3>
+                    Lumière Ring
+                </h3>
+
+                <span class="product-price">
+                    349 zł
+                </span>
+
+ <button class="product-add">
+    <span>DODAJ DO TORBY</span>
+
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 8h12l1 13H5L6 8Z"/>
+        <path d="M9 8a3 3 0 0 1 6 0"/>
+    </svg>
+</button>
+
+            </div>
+
+        </article>
+
+
+        <article class="new-card">
+
+            <div class="new-image">
+
+                <img
+                    src="naszyjniki01.jpg"
+                    alt="Éclat Necklace"
+                >
+
+                <span class="new-label">
+                    NOWOŚĆ
+                </span>
+
+                <button
+                    class="product-wishlist"
+                    type="button"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+
+            <div class="new-info">
+
+                <span class="product-category">
+                    NASZYJNIK
+                </span>
+
+                <h3>
+                    Éclat Necklace
+                </h3>
+
+                <span class="product-price">
+                    429 zł
+                </span>
+
+        <button class="product-add">
+    <span>DODAJ DO TORBY</span>
+
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 8h12l1 13H5L6 8Z"/>
+        <path d="M9 8a3 3 0 0 1 6 0"/>
+    </svg>
+</button>
+
+            </div>
+
+        </article>
+
+
+        <article class="new-card">
+
+            <div class="new-image">
+
+                <img
+                    src="kolczyki3.jpg"
+                    alt="Lumière Earrings"
+                >
+
+                <span class="new-label">
+                    NOWOŚĆ
+                </span>
+
+                <button
+                    class="product-wishlist"
+                    type="button"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+
+            <div class="new-info">
+
+                <span class="product-category">
+                    KOLCZYKI
+                </span>
+
+                <h3>
+                    Lumière Earrings
+                </h3>
+
+                <span class="product-price">
+                    349 zł
+                </span>
+
+           <button class="product-add">
+    <span>DODAJ DO TORBY</span>
+
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 8h12l1 13H5L6 8Z"/>
+        <path d="M9 8a3 3 0 0 1 6 0"/>
+    </svg>
+</button>
+
+            </div>
+
+        </article>
+
+
+        <article class="new-card">
+
+            <div class="new-image">
+
+                <img
+                    src="branzoletki.04.jpg"
+                    alt="Signature Bracelet"
+                >
+
+                <span class="new-label">
+                    NOWOŚĆ
+                </span>
+
+                <button
+                    class="product-wishlist"
+                    type="button"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+
+            <div class="new-info">
+
+                <span class="product-category">
+                    BRANSOLETKA
+                </span>
+
+                <h3>
+                    Signature Bracelet
+                </h3>
+
+                <span class="product-price">
+                    449 zł
+                </span>
+
+              <button class="product-add">
+    <span>DODAJ DO TORBY</span>
+
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 8h12l1 13H5L6 8Z"/>
+        <path d="M9 8a3 3 0 0 1 6 0"/>
+    </svg>
+</button>
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     COLLECTIONS
+===================================================== -->
+
+<section
+    class="collections-section"
+    id="collections"
+>
+
+    <div class="section-heading">
+
+        <div>
+
+            <span class="eyebrow">
+                03 / KOLEKCJE
+            </span>
+
+            <h2>
+                Odkryj LUNEA
+            </h2>
+
+        </div>
+
+
+        <a
+            href="#products"
+            class="text-link"
+        >
+            ZOBACZ WSZYSTKIE
+            <span>↗</span>
+        </a>
+
+    </div>
+
+
+    <div class="collections-grid">
+
+
+        <a
+            href="#products"
+            class="collection-card"
+        >
+
+            <img
+                src="kolekcja4.png"
+                alt="Kolekcja Lumière"
+            >
+
+            <div class="collection-info">
+
+                <span>
+                    KOLEKCJA 01
+                </span>
+
+                <h3>
+                    Lumière
+                </h3>
+
+                <p>
+                    Światło zamknięte w detalu.
+                </p>
+
+            </div>
+
+        </a>
+
+
+        <a
+            href="#products"
+            class="collection-card"
+        >
+
+            <img
+                src="kolekcja02.1.png"
+                alt="Kolekcja Essentials"
+            >
+
+            <div class="collection-info">
+
+                <span>
+                    KOLEKCJA 02
+                </span>
+
+                <h3>
+                    Essentials
+                </h3>
+
+                <p>
+                    Ponadczasowe elementy na co dzień.
+                </p>
+
+            </div>
+
+        </a>
+
+
+        <a
+            href="#products"
+            class="collection-card"
+        >
+
+            <img
+                src="modelka5.jpg"
+                alt="Kolekcja Signature"
+            >
+
+            <div class="collection-info">
+
+                <span>
+                    KOLEKCJA 03
+                </span>
+
+                <h3>
+                    Signature
+                </h3>
+
+                <p>
+                    Esencja charakteru LUNEA.
+                </p>
+
+            </div>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PRODUCTS
+===================================================== -->
+
+<section
+    class="products-section"
+    id="products"
+>
+
+    <div class="products-heading">
+
+        <span class="eyebrow">
+            04 / WYBRANE
+        </span>
+
+        <h2>
+            Biżuteria
+        </h2>
+
+
+        <div class="product-filters">
+
+            <button
+                class="filter-button active"
+                data-filter="all"
+                type="button"
+            >
+                WSZYSTKIE
+            </button>
+
+            <button
+                class="filter-button"
+                data-filter="ring"
+                type="button"
+            >
+                PIERŚCIONKI
+            </button>
+
+            <button
+                class="filter-button"
+                data-filter="necklace"
+                type="button"
+            >
+                NASZYJNIKI
+            </button>
+
+            <button
+                class="filter-button"
+                data-filter="earrings"
+                type="button"
+            >
+                KOLCZYKI
+            </button>
+
+            <button
+                class="filter-button"
+                data-filter="bracelet"
+                type="button"
+            >
+                BRANSOLETKI
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="products-grid">
+
+
+        <!-- RINGS -->
+
+        <article
+            class="product-card"
+            data-category="ring"
+            data-name="Lumière Ring"
+            data-price="349"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="pierscionki9.jpg"
+                    alt="Lumière Ring"
+                >
+
+                <button
+                    class="product-wishlist"
+                    type="button"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    PIERŚCIONEK
+                </span>
+
+                <h3>
+                    Lumière Ring
+                </h3>
+
+                <span class="product-price">
+                    349 zł
+                </span>
+
+                <button class="product-add">
+    <span>DODAJ DO TORBY</span>
+
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 8h12l1 13H5L6 8Z"/>
+        <path d="M9 8a3 3 0 0 1 6 0"/>
+    </svg>
+</button>
+
+            </div>
+
+        </article>
+
+
+        <article
+            class="product-card"
+            data-category="ring"
+            data-name="Soleil Ring"
+            data-price="379"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="pierscionkio2.jpg"
+                    alt="Soleil Ring"
+                >
+
+                <button
+                    class="product-wishlist"
+                    type="button"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    PIERŚCIONEK
+                </span>
+
+                <h3>
+                    Soleil Ring
+                </h3>
+
+                <span class="product-price">
+                    379 zł
+                </span>
+
+             <button class="product-add">
+    <span>DODAJ DO TORBY</span>
+
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 8h12l1 13H5L6 8Z"/>
+        <path d="M9 8a3 3 0 0 1 6 0"/>
+    </svg>
+</button>
+            </div>
+
+        </article>
+
+
+        <article
+            class="product-card"
+            data-category="ring"
+            data-name="Étoile Ring"
+            data-price="459"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="pierscionki.jpg"
+                    alt="Étoile Ring"
+                >
+
+                <button
+                    class="product-wishlist"
+                    type="button"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    PIERŚCIONEK
+                </span>
+
+                <h3>
+                    Étoile Ring
+                </h3>
+
+                <span class="product-price">
+                    459 zł
+                </span>
+
+                <button class="product-add">
+    <span>DODAJ DO TORBY</span>
+
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 8h12l1 13H5L6 8Z"/>
+        <path d="M9 8a3 3 0 0 1 6 0"/>
+    </svg>
+</button>
+
+            </div>
+
+        </article>
+
+
+        <article
+            class="product-card"
+            data-category="ring"
+            data-name="Lunea Ring"
+            data-price="429"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="SIGNATURE1.jpg"
+                    alt="Lunea Ring"
+                >
+
+                <button
+                    class="product-wishlist"
+                    type="button"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    PIERŚCIONEK
+                </span>
+
+                <h3>
+                    Lunea Ring
+                </h3>
+
+                <span class="product-price">
+                    429 zł
+                </span>
+
+              <button class="product-add">
+    <span>DODAJ DO TORBY</span>
+
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 8h12l1 13H5L6 8Z"/>
+        <path d="M9 8a3 3 0 0 1 6 0"/>
+    </svg>
+</button>
+
+            </div>
+
+        </article>
+
+
+        <!-- NECKLACES -->
+
+        <article
+            class="product-card"
+            data-category="necklace"
+            data-name="Éclat Necklace"
+            data-price="429"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="naszyjniki01.jpg"
+                    alt="Éclat Necklace"
+                >
+
+                <button
+                    class="product-wishlist"
+                    type="button"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    NASZYJNIK
+                </span>
+
+                <h3>
+                    Éclat Necklace
+                </h3>
+
+                <span class="product-price">
+                    429 zł
+                </span>
+
+          <button class="product-add">
+    <span>DODAJ DO TORBY</span>
+
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 8h12l1 13H5L6 8Z"/>
+        <path d="M9 8a3 3 0 0 1 6 0"/>
+    </svg>
+</button>
+
+            </div>
+
+        </article>
+
+
+        <article
+            class="product-card"
+            data-category="necklace"
+            data-name="Signature Necklace"
+            data-price="499"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="naszyjnik06.jpg"
+                    alt="Signature Necklace"
+                >
+
+                <button
+                    class="product-wishlist"
+                    type="button"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    NASZYJNIK
+                </span>
+
+                <h3>
+                    Signature Necklace
+                </h3>
+
+                <span class="product-price">
+                    499 zł
+                </span>
+
+              <button class="product-add">
+    <span>DODAJ DO TORBY</span>
+
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 8h12l1 13H5L6 8Z"/>
+        <path d="M9 8a3 3 0 0 1 6 0"/>
+    </svg>
+</button>
+
+            </div>
+
+        </article>
+
+
+        <article
+            class="product-card"
+            data-category="necklace"
+            data-name="Lumière Necklace"
+            data-price="459"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="naszyjniki.jpg"
+                    alt="Lumière Necklace"
+                >
+
+                <button
+                    class="product-wishlist"
+                    type="button"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    NASZYJNIK
+                </span>
+
+                <h3>
+                    Lumière Necklace
+                </h3>
+
+                <span class="product-price">
+                    459 zł
+                </span>
+ <button class="product-add">
+    <span>DODAJ DO TORBY</span>
+
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 8h12l1 13H5L6 8Z"/>
+        <path d="M9 8a3 3 0 0 1 6 0"/>
+    </svg>
+</button>
+
+            </div>
+
+        </article>
+
+
+        <article
+            class="product-card"
+            data-category="necklace"
+            data-name="Étoile Necklace"
+            data-price="479"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="naszyjnik04.jpg"
+                    alt="Étoile Necklace"
+                >
+
+                <button
+                    class="product-wishlist"
+                    type="button"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    NASZYJNIK
+                </span>
+
+                <h3>
+                    Étoile Necklace
+                </h3>
+
+                <span class="product-price">
+                    479 zł
+                </span>
+
+            <button class="product-add">
+    <span>DODAJ DO TORBY</span>
+
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 8h12l1 13H5L6 8Z"/>
+        <path d="M9 8a3 3 0 0 1 6 0"/>
+    </svg>
+</button>
+            </div>
+
+        </article>
+
+
+        <!-- EARRINGS -->
+
+        <article
+            class="product-card"
+            data-category="earrings"
+            data-name="Luna Earrings"
+            data-price="299"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="kolczyki.jpg"
+                    alt="Luna Earrings"
+                >
+
+                <button
+                    class="product-wishlist"
+                    type="button"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    KOLCZYKI
+                </span>
+
+                <h3>
+                    Luna Earrings
+                </h3>
+
+                <span class="product-price">
+                    299 zł
+                </span>
+
+               <button class="product-add">
+    <span>DODAJ DO TORBY</span>
+
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 8h12l1 13H5L6 8Z"/>
+        <path d="M9 8a3 3 0 0 1 6 0"/>
+    </svg>
+</button>
+
+            </div>
+
+        </article>
+
+
+        <article
+            class="product-card"
+            data-category="earrings"
+            data-name="Perle Earrings"
+            data-price="319"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="kolczyki1.jpg"
+                    alt="Perle Earrings"
+                >
+
+                <button
+                    class="product-wishlist"
+                    type="button"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    KOLCZYKI
+                </span>
+
+                <h3>
+                    Perle Earrings
+                </h3>
+
+                <span class="product-price">
+                    319 zł
+                </span>
+ <button class="product-add">
+    <span>DODAJ DO TORBY</span>
+
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 8h12l1 13H5L6 8Z"/>
+        <path d="M9 8a3 3 0 0 1 6 0"/>
+    </svg>
+</button>
+
+            </div>
+
+        </article>
+
+
+        <article
+            class="product-card"
+            data-category="earrings"
+            data-name="Lumière Earrings"
+            data-price="349"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="kolczyki3.jpg"
+                    alt="Lumière Earrings"
+                >
+
+                <button
+                    class="product-wishlist"
+                    type="button"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    KOLCZYKI
+                </span>
+
+                <h3>
+                    Lumière Earrings
+                </h3>
+
+                <span class="product-price">
+                    349 zł
+                </span>
+
+              <button class="product-add">
+    <span>DODAJ DO TORBY</span>
+
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 8h12l1 13H5L6 8Z"/>
+        <path d="M9 8a3 3 0 0 1 6 0"/>
+    </svg>
+</button>
+
+            </div>
+
+        </article>
+
+
+        <article
+            class="product-card"
+            data-category="earrings"
+            data-name="Éclat Earrings"
+            data-price="379"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="kolczyki04.jpg"
+                    alt="Éclat Earrings"
+                >
+
+                <button
+                    class="product-wishlist"
+                    type="button"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    KOLCZYKI
+                </span>
+
+                <h3>
+                    Éclat Earrings
+                </h3>
+
+                <span class="product-price">
+                    379 zł
+                </span>
+
+          <button class="product-add">
+    <span>DODAJ DO TORBY</span>
+
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 8h12l1 13H5L6 8Z"/>
+        <path d="M9 8a3 3 0 0 1 6 0"/>
+    </svg>
+</button>
+
+            </div>
+
+        </article>
+
+
+        <!-- BRACELETS -->
+
+        <article
+            class="product-card"
+            data-category="bracelet"
+            data-name="Lumière Bracelet"
+            data-price="389"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="a.jpg"
+                    alt="Lumière Bracelet"
+                >
+
+                <button
+                    class="product-wishlist"
+                    type="button"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    BRANSOLETKA
+                </span>
+
+                <h3>
+                    Lumière Bracelet
+                </h3>
+
+                <span class="product-price">
+                    389 zł
+                </span>
+
+          <button class="product-add">
+    <span>DODAJ DO TORBY</span>
+
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 8h12l1 13H5L6 8Z"/>
+        <path d="M9 8a3 3 0 0 1 6 0"/>
+    </svg>
+</button>
+
+            </div>
+
+        </article>
+
+
+        <article
+            class="product-card"
+            data-category="bracelet"
+            data-name="Étoile Bracelet"
+            data-price="419"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="branzoletki.05.jpg"
+                    alt="Étoile Bracelet"
+                >
+
+                <button
+                    class="product-wishlist"
+                    type="button"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    BRANSOLETKA
+                </span>
+
+                <h3>
+                    Étoile Bracelet
+                </h3>
+
+                <span class="product-price">
+                    419 zł
+                </span>
+ <button class="product-add">
+    <span>DODAJ DO TORBY</span>
+
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 8h12l1 13H5L6 8Z"/>
+        <path d="M9 8a3 3 0 0 1 6 0"/>
+    </svg>
+</button>
+
+            </div>
+
+        </article>
+
+
+        <article
+            class="product-card"
+            data-category="bracelet"
+            data-name="Signature Bracelet"
+            data-price="449"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="branzoletki.04.jpg"
+                    alt="Signature Bracelet"
+                >
+
+                <button
+                    class="product-wishlist"
+                    type="button"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    BRANSOLETKA
+                </span>
+
+                <h3>
+                    Signature Bracelet
+                </h3>
+
+                <span class="product-price">
+                    449 zł
+                </span>
+
+             <button class="product-add">
+    <span>DODAJ DO TORBY</span>
+
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 8h12l1 13H5L6 8Z"/>
+        <path d="M9 8a3 3 0 0 1 6 0"/>
+    </svg>
+</button>
+
+            </div>
+
+        </article>
+
+
+        <article
+            class="product-card"
+            data-category="bracelet"
+            data-name="Perle Bracelet"
+            data-price="399"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="branzoletki03.jpg"
+                    alt="Perle Bracelet"
+                >
+
+                <button
+                    class="product-wishlist"
+                    type="button"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    BRANSOLETKA
+                </span>
+
+                <h3>
+                    Perle Bracelet
+                </h3>
+
+                <span class="product-price">
+                    399 zł
+                </span>
+
+            <button class="product-add">
+    <span>DODAJ DO TORBY</span>
+
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 8h12l1 13H5L6 8Z"/>
+        <path d="M9 8a3 3 0 0 1 6 0"/>
+    </svg>
+</button>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     EDITORIAL
+===================================================== -->
+
+<section
+    class="editorial"
+    id="gifts"
+>
+
+    <div class="editorial-image">
+
+        <img
+            src="SIGNATURE4.jpg"
+            alt="LUNEA — biżuteria"
+        >
+
+    </div>
+
+
+    <div class="editorial-content">
+
+        <span class="eyebrow">
+            PREZENTY OD LUNEA
+        </span>
+
+        <h2>
+            Podaruj coś,<br>
+            co zostanie na dłużej.
+        </h2>
+
+        <p>
+            Wyjątkowa biżuteria zasługuje na wyjątkową okazję.
+            Odkryj nasze propozycje stworzone z myślą
+            o najważniejszych momentach.
+        </p>
+
+        <a
+            href="#products"
+            class="editorial-link"
+        >
+            ODKRYJ PREZENTY
+            <span>↗</span>
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section
+    class="about-section"
+    id="about"
+>
+
+    <div class="about-left">
+
+        <span class="eyebrow">
+            05 / O LUNEA
+        </span>
+
+        <h2>
+            Mniej.<br>
+            Ale piękniej.
+        </h2>
+
+    </div>
+
+
+    <div class="about-right">
+
+        <p>
+            W LUNEA wierzymy, że luksus nie musi być głośny.
+            Dlatego projektujemy biżuterię opartą na prostych
+            liniach, delikatnych proporcjach i ponadczasowym
+            charakterze.
+        </p>
+
+        <p>
+            Każdy element został zaprojektowany tak,
+            aby stał się częścią Twojej historii.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     NEWSLETTER
+===================================================== -->
+
+<section class="newsletter">
+
+    <span class="eyebrow">
+        ZOSTAŃ Z NAMI
+    </span>
+
+    <h2>
+        Świat LUNEA<br>
+        zaczyna się tutaj.
+    </h2>
+
+    <p>
+        Dołącz do naszego świata i poznawaj
+        nowe kolekcje jako pierwsza.
+    </p>
+
+
+    <form
+        class="newsletter-form"
+        id="newsletterForm"
+    >
+
+        <input
+            type="email"
+            id="newsletterEmail"
+            placeholder="Twój adres e-mail"
+            required
+        >
+
+        <button type="submit">
+            DOŁĄCZ
+            <span>↗</span>
+        </button>
+
+    </form>
+
+
+    <small id="newsletterMessage"></small>
+
+</section>
+
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="footer-top">
+
+        <div class="footer-brand">
+
+            <span class="footer-logo">
+                LUNEA
+            </span>
+
+            <p>
+                Fine jewellery<br>
+                made to last.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <span>
+                NA SKRÓTY
+            </span>
+
+            <a href="#new">
+                Nowości
+            </a>
+
+            <a href="#products">
+                Biżuteria
+            </a>
+
+            <a href="#collections">
+                Kolekcje
+            </a>
+
+            <a href="#about">
+                O nas
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <span>
+                POMOC
+            </span>
+
+            <a href="#">
+                Dostawa
+            </a>
+
+            <a href="#">
+                Zwroty
+            </a>
+
+            <a href="#">
+                Kontakt
+            </a>
+
+            <a href="#">
+                FAQ
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <span>
+                SOCIAL
+            </span>
+
+            <a href="#">
+                Instagram
+            </a>
+
+            <a href="#">
+                TikTok
+            </a>
+
+            <a href="#">
+                Pinterest
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 LUNEA
+        </span>
+
+        <span>
+            FINE JEWELLERY
+        </span>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     CART
+===================================================== -->
+
+<div
+    class="side-panel-overlay"
+    id="cartOverlay"
+></div>
+
+
+<aside
+    class="side-panel"
+    id="cartPanel"
+>
+
+    <div class="side-panel-header">
+
+        <span>
+            TWOJA TORBA
+        </span>
+
+        <button
+            id="closeCart"
+            type="button"
+        >
+            ×
+        </button>
+
+    </div>
+
+
+    <div
+        class="cart-items"
+        id="cartItems"
+    ></div>
+
+
+    <div
+        class="cart-empty"
+        id="cartEmpty"
+    >
+
+        <p>
+            Twoja torba jest pusta.
+        </p>
+
+        <a href="#products">
+            ODKRYJ BIŻUTERIĘ ↗
+        </a>
+
+    </div>
+
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+
+            <span>
+                SUMA
+            </span>
+
+            <strong id="cartTotal">
+                0 zł
+            </strong>
+
+        </div>
+
+
+        <button
+            class="checkout-button"
+            type="button"
+        >
+            PRZEJDŹ DO KASY
+        </button>
+
+    </div>
+
+</aside>
+
+
+<!-- =====================================================
+     WISHLIST
+===================================================== -->
+
+<div
+    class="wishlist-panel-overlay"
+    id="wishlistOverlay"
+></div>
+
+
+<aside
+    class="side-panel"
+    id="wishlistPanel"
+>
+
+    <div class="side-panel-header">
+
+        <span>
+            ULUBIONE
+        </span>
+
+        <button
+            id="closeWishlist"
+            type="button"
+        >
+            ×
+        </button>
+
+    </div>
+
+
+    <div
+        class="wishlist-items"
+        id="wishlistItems"
+    ></div>
+
+
+    <div
+        class="wishlist-empty"
+        id="wishlistEmpty"
+    >
+
+        <p>
+            Nie masz jeszcze ulubionych produktów.
+        </p>
+
+        <a href="#products">
+            ODKRYJ BIŻUTERIĘ ↗
+        </a>
+
+    </div>
+
+</aside>
+
+
+<!-- =====================================================
+     SCRIPTS
+===================================================== -->
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/wishlist.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
