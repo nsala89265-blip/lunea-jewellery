@@ -4101,3 +4101,7 @@ input:focus-visible {
         border-bottom: 1px solid rgba(177, 143, 91, 0.25);
     }
 }
+
+git add .
+git commit -m "opis zmiany"
+git push
