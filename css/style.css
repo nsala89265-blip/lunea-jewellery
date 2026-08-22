@@ -4247,6 +4247,7 @@ input:focus-visible {
         object-fit: cover !important;
         object-position: center !important;
 
+        opacity: 1 !important;
         transform: scale(1) !important;
         animation: none !important;
     }
