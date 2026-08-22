@@ -4158,7 +4158,7 @@ input:focus-visible {
 
         transform: translateX(-50%) !important;
 
-        width: 68vw !important;
+        width: 50vw !important;
         max-width: none !important;
 
         z-index: 3 !important;
