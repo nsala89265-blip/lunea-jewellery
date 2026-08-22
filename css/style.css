@@ -4105,10 +4105,10 @@ input:focus-visible {
 
 @media (max-width: 768px) {
     body {
-        background: red !important;
+        background: blue !important;
     }
 
     .hero-title {
-        color: yellow !important;
+        color: blue !important;
     }
 }
