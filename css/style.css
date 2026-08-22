@@ -4103,84 +4103,132 @@ input:focus-visible {
 }
 
 /* =========================================================
-   LUNEA — MOBILE HERO FIX
+   LUNEA — MOBILE HERO
 ========================================================= */
 
 @media (max-width: 768px) {
 
     .hero {
         position: relative !important;
+        width: 100% !important;
         min-height: 780px !important;
         height: 780px !important;
-        padding: 30px 20px !important;
+        padding: 30px 20px 40px !important;
         overflow: hidden !important;
         display: block !important;
     }
 
-    /* LUNEA — zostaje w miejscu */
+
+    /* =====================================================
+       LUNEA — ŚRODEK
+    ===================================================== */
+
     .hero-title {
         position: absolute !important;
-        top: 27% !important;
+
+        top: 22% !important;
         left: 50% !important;
+
         transform: translate(-50%, -50%) !important;
 
         width: 100% !important;
         margin: 0 !important;
 
+        text-align: center !important;
+
         font-size: 29vw !important;
         line-height: .8 !important;
         letter-spacing: -.07em !important;
 
-        z-index: 1 !important;
         white-space: nowrap !important;
-        pointer-events: none !important;
+
+        z-index: 1 !important;
     }
 
-    /* ZDJĘCIE — nachodzi na napis LUNEA */
+
+    /* =====================================================
+       ZDJĘCIE — DUŻE, NACHODZI NA LUNEA
+    ===================================================== */
+
     .model-wrapper {
         position: absolute !important;
-        top: 25% !important;
+
+        top: 18% !important;
         left: 50% !important;
 
         transform: translateX(-50%) !important;
 
-        width: 47vw !important;
-        max-width: 260px !important;
+        width: 82vw !important;
+        max-width: none !important;
 
         z-index: 3 !important;
     }
 
     .model-frame {
         width: 100% !important;
+
         overflow: hidden !important;
-        border-radius: 120px 120px 0 0 !important;
+
+        border-radius: 160px 160px 0 0 !important;
     }
 
     .model-image {
         width: 100% !important;
-        height: auto !important;
+        height: 440px !important;
+
         display: block !important;
+
         object-fit: cover !important;
+        object-position: center !important;
     }
 
-    /* TEKST PO PRAWEJ */
+
+    /* =====================================================
+       TEKST + PRZYCISK — POD ZDJĘCIEM
+    ===================================================== */
+
     .hero-copy {
         position: absolute !important;
-        top: 39% !important;
-        right: 6vw !important;
-        left: auto !important;
 
-        width: 135px !important;
+        top: 72% !important;
+        left: 20px !important;
+        right: 20px !important;
+
+        width: auto !important;
 
         z-index: 5 !important;
     }
 
+    .small-copy {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 3px !important;
+    }
+
+    .hero-main-text,
+    .hero-sub-text {
+        font-size: 15px !important;
+        line-height: 1.05 !important;
+    }
+
+
     .hero-buttons {
-        margin-top: 17px !important;
-        width: 135px !important;
+        margin-top: 18px !important;
 
         display: flex !important;
         align-items: center !important;
-        gap: 0 !important;
+        gap: 8px !important;
+    }
+
+    .shop-button {
+        min-height: 42px !important;
+        padding: 0 17px !important;
+
+        font-size: 9px !important;
+    }
+
+    .arrow-button {
+        width: 42px !important;
+        height: 42px !important;
     }
 }
