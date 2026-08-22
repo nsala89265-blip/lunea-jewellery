@@ -4232,3 +4232,23 @@ input:focus-visible {
         height: 42px !important;
     }
 }
+
+@media (max-width: 768px) {
+
+    .model-wrapper {
+        width: 68vw !important;
+        top: 24% !important;
+    }
+
+    .model-image {
+        width: 100% !important;
+        height: 400px !important;
+
+        object-fit: cover !important;
+        object-position: center !important;
+
+        transform: scale(1) !important;
+        animation: none !important;
+    }
+
+}
