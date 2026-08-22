@@ -4101,14 +4101,3 @@ input:focus-visible {
         border-bottom: 1px solid rgba(177, 143, 91, 0.25);
     }
 }
-/* ===== TEST ===== */
-
-@media (max-width: 768px) {
-    body {
-        background: blue !important;
-    }
-
-    .hero-title {
-        color: blue !important;
-    }
-}
